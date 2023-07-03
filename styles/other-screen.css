@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.button:hover{
+    background-color: var(--color-1);
+}
+.button:active{
+    background-color: var(--color-2);
+}
+
+a:hover{
+    color: var(--color-bg-2);
+}
+a:active{
+    color: var(--color-1);
+}
+
+
+.form input[type="radio"]:hover ~ label{
+    color: var(--color-2);
+}
+.form input[type="radio"]:checked ~ label{
+    color: var(--color-1);
+}
+
+.form__input:hover input{
+    border-color: var(--color-bg-2);
+}
+.form__input:hover label{
+    background-color: var(--color-bg-2);
+}
+.form__input:focus-within input{
+    border-color: var(--color-1);
+}
+.form__input:focus-within label{
+    background-color: var(--color-1);
+}

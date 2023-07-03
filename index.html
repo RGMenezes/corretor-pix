@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" media="screen and (min-width: 481px)" href="styles/other-screen.css">
     <title>Corretor pix</title>
 </head>
 <body>
+
+    <span class="container--error" id="msg_error"></span>
+
     <header class="header">
         <svg class="header__logo" alt="Logo do site" viewBox="0 0 500 500" >
             <use xlink:href="assets/logo/logo.svg#logo" />
@@ -29,19 +33,22 @@
                     <label for="cpf">CPF</label>
                 </div>
             </div>
+
             <div class="form__input">
                 <label for="key">Chave</label>
                 <input type="text" name="key" id="key" required>
             </div>
-            <span class="container--error" id="msg_error"></span>
+
             <div class="container-x--two">
-                <button type="reset">Apagar</button>
-                <button type="button">Corrigir</button>
+                <button class="button" type="reset">Apagar</button>
+                <button class="button button--highlight" type="button">Corrigir</button>
             </div>
         </form>
+
         <div class="container--result">
             <h2 class="h2">Resultado</h2>
-            <p class="p" id="result"> teste</p>
+            <p class="p" id="result"></p>
+            <button class="button" id="button_copy">Copiar</button>
         </div>
     </main>
 
