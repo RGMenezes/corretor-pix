@@ -1,7 +1,6 @@
 const form = document.querySelector(".form");
 form.addEventListener("submit", (e) => e.preventDefault());
 
-
 const inputKey = document.querySelector("#key");
 inputKey.addEventListener("input", broker);
 
@@ -33,7 +32,16 @@ function broker(){
         
         const container = document.querySelector(".container--result");
         container.style.backgroundColor = "var(--color-bg-2)";
-        if(error) container.style.backgroundColor = "red";
+        
+        if(error){ 
+            container.style.backgroundColor = "red"
+        }else {
+            navigator.clipboard.writeText(value).then( () => {
+                result.innerHTML += `<br><br>Copiado para a área de transferência.`;
+            }).catch((error) => {
+                console.error(error);
+            });
+        };
 
         console.log(key);
         result.innerHTML = value;
