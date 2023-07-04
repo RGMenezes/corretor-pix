@@ -52,26 +52,6 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-.container--error{
-    width: 300px;
-
-    padding: 10px;
-
-    position: fixed;
-    top: 10px;
-    left: 50%;
-
-    background-color: var(--color-bg-1);
-    border: 2px solid #B00020;
-    border-radius: 10px;
-    
-    font: normal normal 1em var(--font);
-    color: #FF0033;
-    text-align: center;
-
-    transform: translate(-50%, calc(-100% + -10px));
-    transition: all .3s ease;
-}
 .container--result{
     width: 300px;
     
@@ -91,6 +71,7 @@ body{
 }
 .container--result .h2, .container--result .p{
     color: var(--color-bg-1);
+    text-align: center;
 }
 .container--result .button{
     background-color: var(--color-bg-1);

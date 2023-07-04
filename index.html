@@ -9,9 +9,6 @@
     <title>Corretor pix</title>
 </head>
 <body>
-
-    <span class="container--error" id="msg_error"></span>
-
     <header class="header">
         <svg class="header__logo" alt="Logo do site" viewBox="0 0 500 500" >
             <use xlink:href="assets/logo/logo.svg#logo" />
@@ -20,7 +17,7 @@
 
 
     <main class="main">
-        <form class="form" action="#" autocomplete="on">
+        <form class="form" autocomplete="on">
             <h1 class="h1">Corretor pix</h1>
         
             <div class="container-x--two">
@@ -40,8 +37,8 @@
             </div>
 
             <div class="container-x--two">
-                <button class="button" type="reset">Apagar</button>
-                <button class="button button--highlight" type="button">Corrigir</button>
+                <button onclick="broker()" class="button" type="reset">Apagar</button>
+                <button onclick="broker()" class="button button--highlight" type="button">Corrigir</button>
             </div>
         </form>
 
