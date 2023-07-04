@@ -43,6 +43,17 @@ body{
     font: normal normal 1em var(--font);
     color: var(--color-main);
 }
+.alert{
+    padding: 15px ;
+    
+    border: 2px solid #B00020;
+    border-radius: 15px;
+
+
+    font: normal 600 1em var(--font);
+    color: #FF0033;
+    text-align: center;
+}
 
 .container-x--two{
     width: 100%;
